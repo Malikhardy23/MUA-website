@@ -14,15 +14,15 @@
     <title>www.muaLexyy.com</title>
 </head>
 <body>
+    <div class="mobileMenu active">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </div>
     <div id="navbar">
         <ion-icon name="grid-outline" id="menuBtn"></ion-icon>
-        <div class="mobileMenu active">
-            <a href="index.html">Home</a>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#contact">Contact</a>
-        </div>
         <div class="navbarLogo">
             MUA Lexyy
         </div>
@@ -50,12 +50,30 @@
             <h1>Gallery</h1>
         </div>
         <div class="galleryContainer">
-            <div class="image galleryImg1"></div>
-            <div class="image galleryImg2"></div>
-            <div class="image galleryImg3"></div>
-            <div class="image galleryImg4"></div>
-            <div class="image galleryImg5"></div>
-            <div class="image galleryImg6"></div>
+            <div class="image galleryImg1" id="myImg1"></div>
+                <div id="myModal1" class="modal">
+                    <div class="image galleryImg1" id="img1" class="modal-content"></div>
+                </div>
+                <div class="image galleryImg2" id="myImg2"></div>
+                <div id="myModal2" class="modal">
+                    <div class="image galleryImg2" id="img2"></div>
+                </div>
+                <div class="image galleryImg3" id="myImg3"></div>
+                <div id="myModal3" class="modal">
+                    <div class="image galleryImg3" id="img3"></div>
+                </div>
+                <div class="image galleryImg4" id="myImg4"></div>
+                <div id="myModal4" class="modal">
+                    <div class="image galleryImg4" id="img4"></div>
+                </div>
+                <div class="image galleryImg5" id="myImg5"></div>
+                <div id="myModal5" class="modal">
+                    <div class="image galleryImg5" id="img5"></div>
+                </div>
+                <div class="image galleryImg6" id="myImg6"></div>
+                <div id="myModal6" class="modal">
+                    <div class="image galleryImg6" id="img6"></div>
+                </div>
         </div>
     </section>
     <section id="testimonials">

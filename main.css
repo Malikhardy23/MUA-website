@@ -16,6 +16,36 @@
     align-content: center;
 }
 
+.mobileMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 93vh;
+    width: 100%;
+    position: absolute;
+    background-color: #767676c1;
+    top: 8.5%;
+    transition: all .4s ease-in-out;
+}
+
+.mobileMenu.active{
+    position: relative;
+    opacity: .5;
+    top: 0;
+    display: none;
+}
+
+.mobileMenu a{
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    letter-spacing: 3px;
+    font-size: 30px;
+    line-height: 50px;
+    padding: 5px;
+    text-decoration: none;
+}
+
 /* navbar links */
 
 #navbar a{
@@ -538,6 +568,16 @@ it reaches its scroll position
           grid-template-columns: 1fr 1fr;
       }
 
+      .galleryContainer button{
+        margin: 0 auto;
+        display: flex;
+        text-align: center;
+        padding: 8px;
+        border: none;
+        border-radius: 50px;
+        background-color: rgb(194, 192, 192);
+      }
+
       .galleryImg1{
           background: url('./galleryImg1.JPG');
           background-size: cover;
@@ -591,6 +631,43 @@ it reaches its scroll position
         width: 8rem;
         background-repeat: no-repeat;
     }
+
+    /* gallery modal */ 
+    #myImg1{
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #myImg1:hover {opacity: 0.7;}
+
+    .modal{
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 180px;
+        padding-left: 90px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    .modal-content{
+        margin: 0 auto;
+        display: block;
+        width: 50%;
+        max-width: 700px;
+    }
+
+    @keyframes zoom{
+        from {transform:scale(0);}
+        to {transform: scale(1);}
+    }
+
 
     /* testimonials */ 
 
