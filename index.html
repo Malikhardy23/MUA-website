@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Encode+Sans+SC&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <title>www.muaLexyy.com</title>
+</head>
+<body>
+    <div id="navbar">
+        <ion-icon name="grid-outline" id="menuBtn"></ion-icon>
+        <div class="mobileMenu active">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="navbarLogo">
+            MUA Lexyy
+        </div>
+    </div>
+    <div class="bannerImage">
+        <img src="./lexy.png">
+        <div class="introText1">
+            <h1>Alexiyah Jackson</h1>
+            <h3>Professional MUA</h3>
+        </div>
+        <div class="introText2">
+            <button type="submit" id="bookMe">Book Me</button>
+        </div>
+    </div>
+    <section id="about">
+        <div class="aboutPicContainer"></div>
+        <div class="aboutTextContainer">
+            <h4>About Me</h4>
+            <h1>Alexiyah Jackson</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ea illum magni veniam vel placeat illo! Facere, modi nulla eius assumenda iusto nemo dolorum amet debitis nam. Tempora, minus aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cum ducimus qui in iste fugit ut vitae officiis veniam delectus omnis amet et impedit eveniet, quo corrupti alias ullam dolorum.</p>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="galleryTextContainer">
+            <h1>Gallery</h1>
+        </div>
+        <div class="galleryContainer">
+            <div class="image galleryImg1"></div>
+            <div class="image galleryImg2"></div>
+            <div class="image galleryImg3"></div>
+            <div class="image galleryImg4"></div>
+            <div class="image galleryImg5"></div>
+            <div class="image galleryImg6"></div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <div class="clientReviewText">
+            <h1>Client Reviews</h1>
+        </div>
+        <div class="clientReviewsContainer">
+            <div class="client client1">
+                <div class="client1img"></div>
+                <h4>Grace Martin</h4>
+                <p>"Best MUA in Houston, HANDS DOWN!"</p>
+                <div class="starContainer">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+            </div>
+            <div class="client client2">
+                <div class="client2img"></div>
+                <h4>Brianna Alexander</h4>
+                <p>"Best MUA in Houston, HANDS DOWN!"</p>
+                <div class="starContainer">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+            </div>
+            <div class="client client3">
+                <div class="client3img"></div>
+                <h4>Megan Thompson</h4>
+                <p>"Best MUA in Houston, HANDS DOWN!"</p>
+                <div class="starContainer">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing">
+        <div class="priceText">
+            <h1>Services</h1>
+        </div>
+        <div class="service service1">
+            <h3>Full Service</h3>
+            <p>Service Includes Eyes, Lips, Hair and Make-up</p>
+            <h4>$100</h4>
+        </div>
+        <div class="service service2">
+            <h3>Courtesy Service</h3>
+            <p>Service Includes Hair and Make-up</p>
+            <h4>$50</h4>
+        </div>
+        <div class="service service3">
+            <h3>Basic Service</h3>
+            <p>Service Includes Make-up</p>
+            <h4>$25</h4>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contactText">
+            <h1>Book Me</h1>
+        </div>
+        <form id="contactForm">
+            <input type="text" id="fname" placeholder="First Name">
+            <input type="text" id="lname" placeholder="Last Name">
+            <select name="userChoice" id="userOptions">
+                <optgroup label="Choose a Service">
+                    <option value="fullService">Full Service</option>
+                    <option value="courtesyService">Courtesy Service</option>
+                    <option value="basicService">Basic Service</option>
+                </optgroup>
+            </select>
+            <label for="date">Choose a Date:</label>
+            <input type="date" id="userDate">
+            <button type="submit" id="reservationBtn">Submit</button>
+        </form>
+    </section>
+</body>
+<script src="index.js"></script>
+</html>
