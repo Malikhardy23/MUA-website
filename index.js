@@ -27,17 +27,16 @@ function myFunction(){
 // get the menu Btn 
 
 const menuBtn = document.getElementById("menuBtn");
-let mobileMenu = document.querySelector('mobileMenu.active');
+let mobileMenu = document.getElementById("mobileMenu");
+const body = document.getElementById("body");
 
 // toggle active class 
 
-const toggleClass = () => {
+let isOpen = false;
 
-    mobileMenu.classList.toggle('active')
-
-}
-
-menuBtn.addEventListener('click', toggleClass);
+menuBtn.addEventListener('click', (e) => {
+    mobileMenu.classList.toggle('active');
+});
 
 
 

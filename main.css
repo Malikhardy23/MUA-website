@@ -16,27 +16,26 @@
     align-content: center;
 }
 
-.mobileMenu{
+#mobileMenu{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 93vh;
+    height: 100vh;
     width: 100%;
     position: absolute;
     background-color: #767676c1;
-    top: 8.5%;
     transition: all .4s ease-in-out;
 }
 
-.mobileMenu.active{
-    position: relative;
-    opacity: .5;
-    top: 0;
-    display: none;
+#mobileMenu.active{
+    position: absolute;
+    opacity: 1;
+    transform: translateX(-360px);
+    transition: all .4s ease-in-out;
 }
 
-.mobileMenu a{
+#mobileMenu a{
     color: rgb(0, 0, 0);
     z-index: 1;
     letter-spacing: 3px;
